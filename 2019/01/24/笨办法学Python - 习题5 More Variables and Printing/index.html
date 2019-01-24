@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang=zh>
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
     <!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="笨办法学Python - 习题5  More Variables and Printing1、习题 4:  更多的变量和打印学习目标：了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。 1.1、用户输入在Python3">
+    <meta name="description" content="笨办法学Python - 习题5  More Variables and Printing1、习题 4:  更多的变量和打印学习目标：了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="无缘の邂逅">
 <meta property="og:url" content="https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/index.html">
 <meta property="og:site_name" content="无缘の邂逅">
-<meta property="og:description" content="笨办法学Python - 习题5  More Variables and Printing1、习题 4:  更多的变量和打印学习目标：了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。 1.1、用户输入在Python3">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:description" content="笨办法学Python - 习题5  More Variables and Printing1、习题 4:  更多的变量和打印学习目标：了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547562594689.png">
 <meta property="og:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547562682169.png">
 <meta property="og:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547565218455.png">
 <meta property="og:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547569854148.png">
 <meta property="og:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547566460309.png">
 <meta property="og:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547569040579.png">
-<meta property="og:updated_time" content="2019-01-15T16:31:10.244Z">
+<meta property="og:updated_time" content="2019-01-24T06:42:53.950Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="无缘の邂逅">
-<meta name="twitter:description" content="笨办法学Python - 习题5  More Variables and Printing1、习题 4:  更多的变量和打印学习目标：了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。 1.1、用户输入在Python3">
+<meta name="twitter:description" content="笨办法学Python - 习题5  More Variables and Printing1、习题 4:  更多的变量和打印学习目标：了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。">
 <meta name="twitter:image" content="d:/WorkSoft/CnBlogPublishTool/assets/1547562594689.png">
     
     
@@ -65,13 +65,13 @@
     <span id="nav">
       <ul>
          
-          <li><a href="/">首页</a></li>
+          <li><a href="/">Inici</a></li>
          
-          <li><a href="/about/">关于</a></li>
+          <li><a href="/about/">Qui som</a></li>
          
-          <li><a href="/archives/">归档</a></li>
+          <li><a href="/archives/">Articles</a></li>
          
-          <li><a href="/projects_url">项目</a></li>
+          <li><a href="/projects_url">Projectes</a></li>
         
       </ul>
     </span>
@@ -85,10 +85,10 @@
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
-      <span id="i-prev" class="info" style="display:none;">上一篇</span>
-      <span id="i-next" class="info" style="display:none;">下一篇</span>
-      <span id="i-top" class="info" style="display:none;">返回顶部</span>
-      <span id="i-share" class="info" style="display:none;">分享文章</span>
+      <span id="i-prev" class="info" style="display:none;">Post Anterior</span>
+      <span id="i-next" class="info" style="display:none;">Post Següent</span>
+      <span id="i-top" class="info" style="display:none;">Adalt</span>
+      <span id="i-share" class="info" style="display:none;">Compartir Post</span>
     </span>
     <br>
     <div id="share" style="display: none">
@@ -102,7 +102,7 @@
   <li><a class="icon" href="http://reddit.com/submit?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&title="><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&title="><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://digg.com/submit?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&title="><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&name=&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&name=&description=&lt;h2 id=&#34;笨办法学Python-习题5-More-Variables-and-Printing&#34;&gt;&lt;a href=&#34;#笨办法学Python-习题5-More-Variables-and-Printing&#34; class=&#34;headerlink&#34; title=&#34;笨办法学Python - 习题5  More Variables and Printing&#34;&gt;&lt;/a&gt;笨办法学Python - 习题5  More Variables and Printing&lt;/h2&gt;&lt;h2 id=&#34;1、习题-4-更多的变量和打印&#34;&gt;&lt;a href=&#34;#1、习题-4-更多的变量和打印&#34; class=&#34;headerlink&#34; title=&#34;1、习题 4:  更多的变量和打印&#34;&gt;&lt;/a&gt;1、习题 4:  更多的变量和打印&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;学习目标：&lt;/strong&gt;了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -147,6 +147,7 @@
 
   <div class="content" itemprop="articleBody">
     <h2 id="笨办法学Python-习题5-More-Variables-and-Printing"><a href="#笨办法学Python-习题5-More-Variables-and-Printing" class="headerlink" title="笨办法学Python - 习题5  More Variables and Printing"></a>笨办法学Python - 习题5  More Variables and Printing</h2><h2 id="1、习题-4-更多的变量和打印"><a href="#1、习题-4-更多的变量和打印" class="headerlink" title="1、习题 4:  更多的变量和打印"></a>1、习题 4:  更多的变量和打印</h2><p><strong>学习目标：</strong>了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。</p>
+<a id="more"></a>
 <h3 id="1-1、用户输入"><a href="#1-1、用户输入" class="headerlink" title="1.1、用户输入"></a>1.1、用户输入</h3><p>在Python3中通常使用的input() 函数直接和用户进行交互，用于等待用户的输入。</p>
 <p>在Python2中通常使用raw_input() 函数来和用户进行交互，基本上raw_input() = input() (python3中),python2中的input() 函数基本上不用，因为在Python2中input() 函数会检查用户输入的是字符还是变量，举个栗子：如果之前定义了name的值，那么name为变量，则当我们输入name的时候，会返回变量name的值，如果之前没有定义name的值则会直接报错。</p>
 <p><img src="D:\WorkSoft\CnBlogPublishTool\assets\1547562594689.png" alt="1547562594689"></p>
@@ -226,13 +227,13 @@
     <div id="nav-footer" style="display: none">
       <ul>
          
-          <li><a href="/">首页</a></li>
+          <li><a href="/">Inici</a></li>
          
-          <li><a href="/about/">关于</a></li>
+          <li><a href="/about/">Qui som</a></li>
          
-          <li><a href="/archives/">归档</a></li>
+          <li><a href="/archives/">Articles</a></li>
          
-          <li><a href="/projects_url">项目</a></li>
+          <li><a href="/projects_url">Projectes</a></li>
         
       </ul>
     </div>
@@ -252,16 +253,16 @@
   <li><a class="icon" href="http://reddit.com/submit?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&title="><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&title="><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://digg.com/submit?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&title="><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&name=&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lazysecb.github.io/2019/01/24/笨办法学Python - 习题5 More Variables and Printing/&name=&description=&lt;h2 id=&#34;笨办法学Python-习题5-More-Variables-and-Printing&#34;&gt;&lt;a href=&#34;#笨办法学Python-习题5-More-Variables-and-Printing&#34; class=&#34;headerlink&#34; title=&#34;笨办法学Python - 习题5  More Variables and Printing&#34;&gt;&lt;/a&gt;笨办法学Python - 习题5  More Variables and Printing&lt;/h2&gt;&lt;h2 id=&#34;1、习题-4-更多的变量和打印&#34;&gt;&lt;a href=&#34;#1、习题-4-更多的变量和打印&#34; class=&#34;headerlink&#34; title=&#34;1、习题 4:  更多的变量和打印&#34;&gt;&lt;/a&gt;1、习题 4:  更多的变量和打印&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;学习目标：&lt;/strong&gt;了解用户输入方法，明白pthon2和Python3之间的用户输入的区别。了解格式化字符串(format string)的概念，学会如何创建包含变量内容的字符串。使用专门的格式和语法把变量的内容放到字符串里，然后进行格式化的打印输出。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
 
     <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menú</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Compartir</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Cap amunt</a>
     </div>
 
   </div>
@@ -276,13 +277,13 @@
     <nav>
       <ul>
          
-          <li><a href="/">首页</a></li>
+          <li><a href="/">Inici</a></li>
          
-          <li><a href="/about/">关于</a></li>
+          <li><a href="/about/">Qui som</a></li>
          
-          <li><a href="/archives/">归档</a></li>
+          <li><a href="/archives/">Articles</a></li>
          
-          <li><a href="/projects_url">项目</a></li>
+          <li><a href="/projects_url">Projectes</a></li>
         
       </ul>
     </nav>
