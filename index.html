@@ -164,7 +164,6 @@
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
   
     
@@ -788,6 +787,10 @@
 
     
   </div>
+  
+  <div class="bg_content">
+		<canvas id="canvas"></canvas>
+  </div>
 
   
 
@@ -861,6 +864,33 @@
 
 
   
+
+
+
+
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: 'lazysecb.github.io',
+    owner: '',
+    admin: [''],
+    id: md5(location.pathname),
+    distractionFreeMode: ''
+  });
+  gitalk.render('gitalk-container');
+</script>
 
 
 
@@ -1222,3 +1252,4 @@
 
 </body>
 </html>
+<script type="text/javascript" src="/js/src/dynamic_bg.js"></script>

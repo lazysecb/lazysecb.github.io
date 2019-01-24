@@ -165,7 +165,6 @@
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
   
     
@@ -516,6 +515,10 @@
           
 
   
+    <div class="comments" id="gitalk-container">
+    </div>
+  
+  
 
 
 
@@ -676,6 +679,10 @@
 
     
   </div>
+  
+  <div class="bg_content">
+		<canvas id="canvas"></canvas>
+  </div>
 
   
 
@@ -756,6 +763,90 @@
 
 
   
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: 'lazysecb.github.io',
+    owner: '',
+    admin: [''],
+    id: md5(location.pathname),
+    distractionFreeMode: ''
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '67ade2d33de996e62f7e',
+          clientSecret: 'e98a90530c7354779ca4add79a7428f213155f6e',
+          repo: 'lazysecb.github.io',
+          owner: 'lazysecb',
+          admin: ['lazysecb'],
+          id: location.pathname,
+          distractionFreeMode: ''
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+  
+
+
+
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: 'lazysecb.github.io',
+    owner: '',
+    admin: [''],
+    id: md5(location.pathname),
+    distractionFreeMode: ''
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '67ade2d33de996e62f7e',
+          clientSecret: 'e98a90530c7354779ca4add79a7428f213155f6e',
+          repo: 'lazysecb.github.io',
+          owner: 'lazysecb',
+          admin: ['lazysecb'],
+          id: location.pathname,
+          distractionFreeMode: ''
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
@@ -1116,3 +1207,4 @@
 
 </body>
 </html>
+<script type="text/javascript" src="/js/src/dynamic_bg.js"></script>
